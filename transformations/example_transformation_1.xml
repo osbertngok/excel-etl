@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<transformation>
+	<type>ADO</type><!-- Currently only ADO SQL is supported-->
+  <sql>
+<![CDATA[
+       SELECT    src_agg.[user],
+                 :g_customizedVariable: AS [year],
+                 IIF(ISNULL(ref.[color]), 'No Record', ref.[color]) AS [favourateColor], 
+                 '''=IF(RC[-3]="osbertngok", "author", "whatever")' AS role,
+                 src_agg.[totalPV],
+                 src_agg.[firstCreatedDate],
+                 src_agg.[lastCreatedDate]
+       FROM     ((SELECT  [user], 
+                          SUM([pv]) AS [totalPV], 
+                          MIN([createdDate]) AS [firstCreatedDate], 
+                          MAX([createdDate]) AS [lastCreatedDate]
+                 FROM     [sourceTable] 
+                 GROUP BY [user]) src_agg
+       LEFT OUTER JOIN [user_ref] ref
+       ON        src_agg.[user] = ref.[user])
+                 
+]]>
+  </sql>
+</transformation>

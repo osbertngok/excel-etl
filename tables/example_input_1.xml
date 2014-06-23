@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<tableDefinition>
+  <tableName>Example Input 1</tableName><!-- For reference only; program will not read this-->
+  <columns>
+    <column>
+      <columnHeader>Repository</columnHeader><!-- Only matters for printing header; not used for identification-->
+      <columnID>repository</columnID><!-- Used in referencing in SQL-->
+      <dataType>DATA_TYPE_STRING</dataType><!-- Only affecting whether the generated SQL contains quotes or not-->
+      <numberFormat>@</numberFormat><!-- Refer to the formatting in Excel, see http://jonvonderheyden.net/excel/a-comprehensive-guide-to-number-formats-in-excel/ -->
+    </column>
+    <column>
+      <columnHeader>User</columnHeader>
+      <columnID>user</columnID>
+      <dataType>DATA_TYPE_STRING</dataType>
+      <numberFormat>@</numberFormat>
+    </column>
+    <column>
+      <columnHeader>Created Date</columnHeader>
+      <columnID>createdDate</columnID>
+      <dataType>DATA_TYPE_STRING</dataType>
+      <numberFormat>yyyy/mm/dd;@</numberFormat>
+    </column>
+    <column>
+      <columnHeader>PV</columnHeader>
+      <columnID>pv</columnID>
+      <dataType>DATA_TYPE_INTEGER</dataType>
+      <numberFormat>#</numberFormat>
+    </column>
+  </columns>
+</tableDefinition>
+

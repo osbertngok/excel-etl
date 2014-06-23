@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<tableDefinition>
+  <tableName>Example Output 1</tableName><!-- For reference only; program will not read this-->
+  <columns>
+    <column>
+      <columnHeader>User</columnHeader>
+      <columnID>user</columnID>
+      <dataType>DATA_TYPE_STRING</dataType>
+      <numberFormat>@</numberFormat>
+    </column>
+    <column>
+      <columnHeader>Year</columnHeader>
+      <columnID>year</columnID>
+      <dataType>DATA_TYPE_INTEGER</dataType>
+      <numberFormat>#</numberFormat>
+    </column>
+    <column>
+      <columnHeader>Favorate Color</columnHeader>
+      <columnID>favorateColor</columnID>
+      <dataType>DATA_TYPE_STRING</dataType>
+      <numberFormat>@</numberFormat>
+    </column>
+    <column>
+      <columnHeader>Role</columnHeader>
+      <columnID>role</columnID>
+      <dataType>DATA_TYPE_STRING</dataType>
+    </column>
+    <column>
+      <columnHeader>PV</columnHeader>
+      <columnID>totalPV</columnID>
+      <dataType>DATA_TYPE_INTEGER</dataType>
+      <numberFormat>#</numberFormat>
+    </column>
+    <column>
+      <columnHeader>First Created Date</columnHeader>
+      <columnID>firstCreatedDate</columnID>
+      <dataType>DATA_TYPE_STRING</dataType>
+      <numberFormat>yyyy/mm/dd;@</numberFormat>
+    </column>
+    <column>
+      <columnHeader>Last Created Date</columnHeader>
+      <columnID>lastCreatedDate</columnID>
+      <dataType>DATA_TYPE_STRING</dataType>
+      <numberFormat>yyyy/mm/dd;@</numberFormat>
+    </column>
+  </columns>
+</tableDefinition>
+
