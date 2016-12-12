@@ -4,7 +4,7 @@ excel-etl
 **excel-etl** is an ETL library for executing SQL in Excel. Features include:
 
 * Only requires Microsoft Office 2007 or above; no other database / business intelligence tools are needed
-* Whole interface is Microsoft Excel; no learning curse for business users
+* Whole interface is Microsoft Excel; no learning curve for business users
 * Processing based on database engine, much faster than tailor made native Excel 
 * Support all data processing functionalities provided by Microsoft Access Database Engine, including joining multiple tables, aggregation, multiple ordering and arbitrary formula
 * Support formulas output that reference other cells of the table
